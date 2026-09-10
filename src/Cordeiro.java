@@ -1,0 +1,26 @@
+public class Cordeiro extends OvelhaMae {
+
+    public Cordeiro(int id, String nome, String raca, int idade, String status) {
+        super(id, nome, raca, idade, status);
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Som: Bééé!");
+    }
+
+    @Override
+    public void coletarProduto() {
+        System.out.println(nome + " ainda não produz lã.");
+    }
+
+    @Override
+    public void mostrarInformacoes() {
+        System.out.println("[ID: " + id + "] " + nome + " (Cordeiro)");
+        System.out.println(" - Raça: " + raca);
+        System.out.println(" - Idade: " + idade + " anos");
+        System.out.println(" - Status: " + status);
+        emitirSom();
+        System.out.println();
+    }
+}
